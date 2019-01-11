@@ -9,7 +9,7 @@ Dxlibに描画してみましょう。例えば文字や図形、画像などを
 そして、縦がX座標、横がY座標です。ここはいいですが、**Y座標は下に行くほど正となっている**点に注意してください。   
 数学の座標平面とは異なっていることを頭に入れておいてください。
 
-![座標について](Image/ExplainCoordinate.png) 図：Dxlibにおける座標について   
+![座標について](Image/04ExplainCoordinate.png) 図：Dxlibにおける座標について   
 
 この性質は今後ゲームを作る時、動きに関するバグが発生した際に真っ先に注意するべき点です。覚えておきましょう。(忘れてしまい、罠にはまることだけは避けましょう！！！！)
 ****
@@ -50,7 +50,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	return 0;
 }
 ```
-![実行結果](Image/DrawBoxresult.bmp)  
+![実行結果](Image/04DrawBoxresult.bmp)  
 実行すると、(100,100)から(300,300)にかけて四角形が描画されています。
 ***
 ### int DrawCircle(int x, int y, int r, int color,int FillFlag);
@@ -82,7 +82,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	return 0;
 }
 ```
-![実行結果](Image/DrawCircleResult.bmp)  
+![実行結果](Image/04DrawCircleResult.bmp)  
 実行すると、(200,200)の位置に半径100の円が描画されています。
 
 ここで、実行結果を見て欲しいのですが、円がくっきりしています。というか、表面のギザギザが目立ちませんか？ 実はこのギザギザを緩和して円を描画する関数があります。  
@@ -119,7 +119,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	return 0;
 }
 ```
-![実行結果](Image/DrawCircleAAResult.bmp)  
+![実行結果](Image/04DrawCircleAAResult.bmp)  
 実行すると、(200,200)の位置になめらかに半径100の円が描画されています。
 
 実は先に紹介したDrawBoxにもアンチエイリアス付きVerもあるのですが、四角形をアンチエイリアス効果することがあまりないため割愛
@@ -155,7 +155,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	return 0;
 }
 ```
-![実行結果](Image/DrawOvalResult.bmp)  
+![実行結果](Image/04DrawOvalResult.bmp)  
 こいつにもアンチエイリアス版があります
 
 ### int DrawOvalAA(float x, float y, float rx r, float ry,int posnum,int color,int FillFlag);
