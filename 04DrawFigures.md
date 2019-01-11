@@ -50,7 +50,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	return 0;
 }
 ```
-![実行結果](Image/04DrawBoxresult.bmp)  
+![実行結果](Image/04DrawBoxResult.bmp)  
 実行すると、(100,100)から(300,300)にかけて四角形が描画されています。
 ***
 ### int DrawCircle(int x, int y, int r, int color,int FillFlag);
