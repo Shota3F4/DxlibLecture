@@ -55,6 +55,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 ***
 ### int DrawCircle(int x, int y, int r, int color,int FillFlag);
 画面上に円を描きます。
+
 |引数|説明|
 |------|-----|
 |(x,y)|描画する円の中心の座標|
@@ -90,6 +91,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 
 ### int DrawCircleAA(float x, float y, float r, int color,int posnum,int FillFlag);
 画面上にアンチエイリアス効果の付いた円を描きます。また、x,y,rがfloatになっています。
+
 |引数|説明|
 |------|-----|
 |(x,y)|描画する円の中心の座標|
@@ -125,6 +127,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 
 ### int DrawOval(int x, int y, intrx r, int ry,int color,int FillFlag);
 画面上に楕円を描きます。
+
 |引数|説明|
 |------|-----|
 |(x,y)|描画する円の中心の座標|
@@ -157,6 +160,7 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 
 ### int DrawOvalAA(float x, float y, float rx r, float ry,int posnum,int color,int FillFlag);
 画面上にアンチエイリアス効果付きの楕円を描きます。
+
 |引数|説明|
 |------|-----|
 |(x,y)|描画する円の中心の座標|
